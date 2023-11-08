@@ -32,7 +32,28 @@ body{
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
-}
+    box-shadow: inset 0 0 0 0 var(--cor-terciaria);
+    color: var(--cor-terciaria);
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  .cabecalho__menu__link:hover {
+    color: var(--cor-secundaria);
+    box-shadow: inset 200px 0 0 0 var(--cor-terciaria);;
+  }
+  
+  /* Presentational styles */
+  a {
+    color: #54b3d6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
 .apresentacao{
     padding: 5% 15%;
     display: flex;
@@ -124,6 +145,7 @@ body{
 
     .apresentacao__links__navegacao {
         width: auto;
-    }    
+    }
+
     
 }
